@@ -1,0 +1,436 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-App-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  min-height: 100vh;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar-container {
+  width: 100%;
+  height: 125px;
+  background-color: #2c0e3a;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.match-logo {
+  height: 55px;
+  width: 235px;
+}
+.score-ul-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.score-li-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.score-text {
+  color: #ffffff;
+  font-size: 26px;
+  font-family: 'roboto';
+  font-weight: 510;
+  margin-left: auto;
+  margin-right: 40px;
+}
+.score-span {
+  color: #fec653;
+  font-size: 30px;
+  font-family: 'roboto';
+  font-weight: 510;
+}
+.timer-png {
+  height: 30px;
+  width: 30px;
+}
+.timer-text {
+  color: #fec653;
+  font-size: 30px;
+  font-family: 'roboto';
+  font-weight: 510;
+  margin-left: 10px;
+}
+.game-match-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 0;
+}
+
+.game-images-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: column;
+  align-items: center;
+}
+
+.bg-image-png {
+  width: 80%;
+}
+.tabs-ui-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.tab-list-items {
+  list-style-type: none;
+}
+.tab-text {
+  background-color: transparent;
+  outline: none;
+  border: 0px solid;
+  color: #ffffff;
+  font-size: 25px;
+
+  font-family: 'roboto';
+  font-weight: 510;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.tab-text-active {
+  background-color: transparent;
+  outline: none;
+  border: 0px solid;
+  color: #fec653;
+  font-size: 25px;
+  margin-right: 30px;
+  border-bottom: 5px solid #fec653;
+  cursor: pointer;
+}
+.tumbnails-ul-container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-right: 20px;
+}
+.tumbnails-li-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 10px;
+
+  padding: 0;
+}
+.tumbnails-btn {
+  border: 0px solid;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.tumbnails-png {
+  height: 125px;
+  width: 125px;
+  margin: 0;
+}
+
+/* >>>>>>>>>>>>>>>>>> ScoreCard Section >>>>>>>>>>>>>>>>>>>> */
+.bg-scorecard-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+  width: 680px;
+  height: 800px;
+
+  background-size: cover;
+  padding-top: 250px;
+  padding-bottom: 50px;
+}
+.trophy-text-btn-div {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.trophy-png {
+  height: 260px;
+  width: 340px;
+  margin: 0;
+}
+
+.your-score {
+  margin: 0;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: 'roboto';
+}
+.score {
+  margin: 20px;
+  color: #ffffff;
+  font-size: 100px;
+  font-family: 'roboto';
+}
+.play-agin-btn {
+  height: 90px;
+  width: 260px;
+  padding: 25px;
+  background-color: #cf60c8;
+  color: #ffffff;
+  border: 0px solid;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: 'roboto';
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.reset-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/*  >>>>>>>>>>>>>>>> Mobile Device >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 767px) {
+  .bg-App-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+    min-height: 100vh;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-container {
+    width: 100%;
+    height: 65px;
+    background-color: #2c0e3a;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .match-logo {
+    height: 20px;
+    width: 90px;
+  }
+  .score-ul-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .score-li-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .score-text {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'roboto';
+    font-weight: 510;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+  .score-span {
+    color: #fec653;
+    font-size: 15px;
+    font-family: 'roboto';
+    font-weight: 510;
+  }
+  .timer-png {
+    height: 16px;
+    width: 16px;
+  }
+  .timer-text {
+    color: #fec653;
+    font-size: 14px;
+    font-family: 'roboto';
+    font-weight: 510;
+    margin-left: 5px;
+  }
+  .game-match-section {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 0;
+  }
+
+  .game-images-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
+    align-items: center;
+  }
+
+  .bg-image-png {
+    width: 90%;
+  }
+  .tabs-ui-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    margin: 0;
+  }
+  .tab-list-items {
+    list-style-type: none;
+  }
+  .tab-text {
+    background-color: transparent;
+    outline: none;
+    border: 0px solid;
+    color: #ffffff;
+    font-size: 12px;
+
+    font-family: 'roboto';
+    font-weight: 510;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .tab-text-active {
+    background-color: transparent;
+    outline: none;
+    border: 0px solid;
+    color: #fec653;
+    font-size: 12px;
+    margin-right: 5px;
+    border-bottom: 2px solid #fec653;
+    cursor: pointer;
+  }
+  .tumbnails-ul-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-right: 40px;
+  }
+  .tumbnails-li-container {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+    margin-right: 1px;
+
+    padding: 0;
+  }
+  .tumbnails-btn {
+    border: 0px solid;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    margin: 0;
+  }
+  .tumbnails-png {
+    height: 60px;
+    width: 60px;
+    margin: 0;
+  }
+
+  /* >>>>>>>>>>>>>>>>>> ScoreCard Section >>>>>>>>>>>>>>>>>>>> */
+  .bg-scorecard-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-sm-bg.png');
+    width: 280px;
+    height: 380px;
+
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+  .trophy-text-btn-div {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .trophy-png {
+    height: 120px;
+    width: 200px;
+    margin: 0;
+  }
+
+  .your-score {
+    margin: 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'roboto';
+  }
+  .score {
+    margin: 10px;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: 'roboto';
+  }
+  .play-agin-btn {
+    height: 50px;
+    width: 150px;
+    padding: 15px;
+    background-color: #cf60c8;
+    color: #ffffff;
+    border: 0px solid;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'roboto';
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .reset-icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+  }
+}
